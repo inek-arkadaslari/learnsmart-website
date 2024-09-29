@@ -56,7 +56,7 @@ export function Navbar({onSearchButtonClick}) {
             <p className="font-sans font-bold mr-4">learnsmart</p>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="focus:bg-transparent group-hover:bg-transparent hover:text-foreground/80
+            <NavigationMenuTrigger className="focus:bg-transparent group-hover:bg-transparent bg-transparent hover:text-foreground/80
             text-foreground/60 font-sans font-light">About</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -86,7 +86,7 @@ export function Navbar({onSearchButtonClick}) {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className="focus:bg-transparent group-hover:bg-transparent hover:text-foreground/80 text-foreground/60 font-sans font-light">Documents</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="focus:bg-transparent group-hover:bg-transparent hover:text-foreground/80 text-foreground/60 font-sans font-light bg-transparent">Documents</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                 {components.map((component) => (
@@ -137,6 +137,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
+  );
 })
 ListItem.displayName = "ListItem"
