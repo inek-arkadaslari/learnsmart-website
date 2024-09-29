@@ -20,7 +20,7 @@ export default function Home() {
     <main>
       <Navbar onSearchButtonClick={openDialog} />
       <DialogModal isOpen={isDialogOpen} onClose={closeDialog} />
-        <Card className="w-[98%] mx-auto mt-1.5 p-4">
+        <div className="w-[97%] mx-auto mt-1.5 p-4">
             <div className="flex w-full h-[40vh] justify-between">
                 <Card className="w-2/5 relative h-full">
                     <Image
@@ -43,8 +43,8 @@ export default function Home() {
                         efficiency and effectiveness of student learning.</p>
                 </div>
             </div>
-            <div className="flex w-full h-[40vh] justify-between py-8">
-                <div className="w-2/5  p-4 flex flex-col justify-center">
+            <div className="flex w-full h-[40vh] justify-between py-4">
+                <div className="w-2/5 flex flex-col justify-center">
                     <h1 className="text-4xl text-foreground/60 font-sans font-light">Core Features</h1>
                     <br className="border-2"/>
                     <p className="font-sans font-light">Uploading lecture presentations, syllabi, textbooks,
@@ -64,7 +64,7 @@ export default function Home() {
                     />
                 </Card>
             </div>
-        </Card>
+        </div>
     </main>
   );
 }
