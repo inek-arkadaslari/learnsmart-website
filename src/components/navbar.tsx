@@ -17,30 +17,30 @@ const components: { title: string; href: string; description: string }[] = [
     title: "Project Information Form",
     href: "",
     description:
-      "Details of the project, Deadline: ",
+      "Details of the project, Deadline: 18.10.2024",
   },
   {
     title: "Assessment of Innovation form",
     href: "",
     description:
-      "Form to be sent to the innovation experts, Deadline: ",
+      "Form to be sent to the innovation experts, Deadline: 25.10.2024",
   },
   {
     title: "Project Specification Document",
     href: "",
     description:
-      "Specs document, Deadline: ",
+      "Specs document, Deadline: 22.11.2024",
   },
   {
     title: "Analysis and Requirements Report",
     href: "",
-    description: "Requirements Report, Deadline: ",
+    description: "Requirements Report, Deadline: 13.12.2024",
   },
   {
     title: "Presentation and Demo",
     href: "",
     description:
-      "Final Document, Deadline: ",
+      "Final Document, Deadline: Last Week via Zoom",
   },
 ];
 
@@ -59,7 +59,7 @@ export function Navbar({onSearchButtonClick}) {
             <NavigationMenuTrigger className="focus:bg-transparent group-hover:bg-transparent bg-transparent hover:text-foreground/80
             text-foreground/60 font-sans font-light">About</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <ul className="font-sans font-light grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                 <li className="row-span-3">
                   <NavigationMenuLink asChild>
                     <a
@@ -67,7 +67,7 @@ export function Navbar({onSearchButtonClick}) {
                       href="/"
                     >
                       <Icons.logo className="h-6 w-6" />
-                      <div className="mb-2 mt-4 text-lg font-medium">
+                      <div className="mb-2 mt-4 text-lg font-normal">
                         Learnsmart
                       </div>
                       <p className="text-sm leading-tight text-muted-foreground">
@@ -130,8 +130,8 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <div className="text-sm font-sans font-normal leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm font-sans font-light leading-snug text-muted-foreground">
             {children}
           </p>
         </a>
